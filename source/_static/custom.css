@@ -1,0 +1,15 @@
+#navbar-toggler {
+    display: none;
+}
+
+#site-navigation div.navbar_extra_footer {
+    text-align: left;
+}
+
+.prev-next-bottom {
+    display: none;
+}
+
+#site-navigation h4 {
+    margin-top: 0;
+}

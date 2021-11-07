@@ -1,0 +1,4 @@
+sphinx-book-theme==0.1.6
+myst-parser==0.15.2
+sphinxcontrib-mermaid==0.7.1
+ablog==0.10.20

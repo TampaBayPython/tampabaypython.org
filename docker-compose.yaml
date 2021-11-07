@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  website:
+    image: sphinxdoc/sphinx
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/docs
