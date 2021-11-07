@@ -1,0 +1,760 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meetup revitalization survey results &#8212; Tampa Bay Python</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+     
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../blog/atom.xml"
+  title="Blog"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Tampa Bay Python</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Home
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../code_of_conduct.html">
+   Code of Conduct
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../events.html">
+   Events
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../community.html">
+   Community
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../blog.html">
+   Blog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../contribute.html">
+   Contribute
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav><p>
+  <a href="https://join.slack.com/t/tampabaypython/shared_invite/zt-xwb0hasz-ueoy79~rD7DWbWkaI1yTiw" class="twitter-follow-button" data-show-count="false">
+    Join our Slack community
+  </a>
+  <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+</p>
+
+<p>
+  <a href="https://twitter.com/tampabaypython" class="twitter-follow-button" data-show-count="false">
+    Follow @TampaBayPython
+  </a>
+  <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+</p>
+
+<p>
+  <iframe src="https://ghbtns.com/github-btn.html?user=tampabaypython&type=follow&count=false" allowtransparency="true"
+    frameborder="0" scrolling="0" width="200" height="20"></iframe></p>
+<p>
+  <a href="https://www.meetup.com/tampa-bay-python/">Join the Meetup group</a>
+</p> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  
+Community of professionals, enthusiasts, students, and companies using or
+learning Python in the Tampa Bay Area.
+
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/tampabaypython/tampabaypython.org"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/tampabaypython/tampabaypython.org/issues/new?title=Issue%20on%20page%20%2Fblog/2021-11-6-survey-results.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/tampabaypython/tampabaypython.org/edit/main/blog/2021-11-6-survey-results.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Outline
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Meetup revitalization survey results
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-often-would-you-want-to-attend-in-person-events">
+     How often would you want to attend in-person events?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#would-you-attend-an-office-hours-meetup">
+     Would you attend an office hours meetup?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-often-would-you-want-to-attend-online-events-on-zoom">
+     How often would you want to attend online events on Zoom?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#which-types-of-events-sound-appealing-to-you">
+     Which types of events sound appealing to you?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-are-you-looking-to-gain-from-these-meetups">
+     What are you looking to gain from these meetups?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-day-s-of-the-week-would-you-prefer-to-attend">
+     What day(s) of the week would you prefer to attend?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-do-you-use-python-in-your-life">
+     How do you use Python in your life?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-skill-level-would-you-like-the-events-be-catered-to">
+     What skill level would you like the events be catered to?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#are-there-any-topics-in-particular-you-d-like-presented">
+     Are there any topics in particular you’d like presented?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#would-you-be-interested-in-helping-the-group-with-any-of-the-following">
+     Would you be interested in helping the group with any of the following?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#is-there-anything-else-you-d-like-to-share">
+     Is there anything else you’d like to share?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summarization">
+   Summarization
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                 <div class="tex2jax_ignore mathjax_ignore section" id="meetup-revitalization-survey-results">
+<h1>Meetup revitalization survey results<a class="headerlink" href="#meetup-revitalization-survey-results" title="Permalink to this headline">¶</a></h1>
+<p>Hi members of TBP, it’s been one week since the survey was published for the
+group to share your opinions. Thanks for taking the time. It helped better
+understand what you want to see in the community.</p>
+<p>I wanted to share the results with you and a few action items that I think we
+can take from it.</p>
+<p>Typeform link: <a class="reference external" href="https://tampabaypython.typeform.com/report/T0oVFliG/eiOdjPwAtQzYwxem">https://tampabaypython.typeform.com/report/T0oVFliG/eiOdjPwAtQzYwxem</a></p>
+<div class="section" id="how-often-would-you-want-to-attend-in-person-events">
+<h2>How often would you want to attend in-person events?<a class="headerlink" href="#how-often-would-you-want-to-attend-in-person-events" title="Permalink to this headline">¶</a></h2>
+<p>45 out of 45 people answered this question</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Answer</p></th>
+<th class="head"><p>Respondents</p></th>
+<th class="head"><p>Percentage</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Once a month</p></td>
+<td><p>29</p></td>
+<td><p>64.4%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Two or more times per month</p></td>
+<td><p>10</p></td>
+<td><p>22.2%</p></td>
+</tr>
+<tr class="row-even"><td><p>Once every few months</p></td>
+<td><p>3</p></td>
+<td><p>6.7%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Not comfortable with in-person events at this time</p></td>
+<td><p>2</p></td>
+<td><p>4.4%</p></td>
+</tr>
+<tr class="row-even"><td><p>Weekly</p></td>
+<td><p>1</p></td>
+<td><p>2.2%</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="would-you-attend-an-office-hours-meetup">
+<h2>Would you attend an office hours meetup?<a class="headerlink" href="#would-you-attend-an-office-hours-meetup" title="Permalink to this headline">¶</a></h2>
+<p>45 out of 45 people answered this question</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Answer</p></th>
+<th class="head"><p>Respondents</p></th>
+<th class="head"><p>Percentage</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Yes</p></td>
+<td><p>29</p></td>
+<td><p>64.4%</p></td>
+</tr>
+<tr class="row-odd"><td><p>No</p></td>
+<td><p>16</p></td>
+<td><p>35.6%</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="how-often-would-you-want-to-attend-online-events-on-zoom">
+<h2>How often would you want to attend online events on Zoom?<a class="headerlink" href="#how-often-would-you-want-to-attend-online-events-on-zoom" title="Permalink to this headline">¶</a></h2>
+<p>45 out of 45 people answered this question</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Answer</p></th>
+<th class="head"><p>Respondents</p></th>
+<th class="head"><p>Percentage</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Once a month</p></td>
+<td><p>17</p></td>
+<td><p>37.8%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Two or more times per month</p></td>
+<td><p>17</p></td>
+<td><p>37.8</p></td>
+</tr>
+<tr class="row-even"><td><p>Weekly</p></td>
+<td><p>5</p></td>
+<td><p>11.1%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Not interested in online events</p></td>
+<td><p>4</p></td>
+<td><p>8.9%</p></td>
+</tr>
+<tr class="row-even"><td><p>Once every few months</p></td>
+<td><p>2</p></td>
+<td><p>4.4%</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="which-types-of-events-sound-appealing-to-you">
+<h2>Which types of events sound appealing to you?<a class="headerlink" href="#which-types-of-events-sound-appealing-to-you" title="Permalink to this headline">¶</a></h2>
+<p>45 out of 45 people answered this question (with multiple choice)</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Answer</p></th>
+<th class="head"><p>Respondents</p></th>
+<th class="head"><p>Percentage</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Formal presentation with a speaker followed by Q&amp;A</p></td>
+<td><p>42</p></td>
+<td><p>93.3%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Workshop/training</p></td>
+<td><p>40</p></td>
+<td><p>88.9%</p></td>
+</tr>
+<tr class="row-even"><td><p>Happy hour/purely social gatherings</p></td>
+<td><p>24</p></td>
+<td><p>53.3%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Lightning talks</p></td>
+<td><p>20</p></td>
+<td><p>44.4%</p></td>
+</tr>
+<tr class="row-even"><td><p>Office hours</p></td>
+<td><p>13</p></td>
+<td><p>28.9%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Other</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="what-are-you-looking-to-gain-from-these-meetups">
+<h2>What are you looking to gain from these meetups?<a class="headerlink" href="#what-are-you-looking-to-gain-from-these-meetups" title="Permalink to this headline">¶</a></h2>
+<p>45 out of 45 people answered this question (with multiple choice)</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Answer</p></th>
+<th class="head"><p>Respondents</p></th>
+<th class="head"><p>Percentage</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Learn something new</p></td>
+<td><p>44</p></td>
+<td><p>97.8%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Meet new people with common interests</p></td>
+<td><p>35</p></td>
+<td><p>77.8%</p></td>
+</tr>
+<tr class="row-even"><td><p>Find a new job</p></td>
+<td><p>12</p></td>
+<td><p>26.7%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Other</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="what-day-s-of-the-week-would-you-prefer-to-attend">
+<h2>What day(s) of the week would you prefer to attend?<a class="headerlink" href="#what-day-s-of-the-week-would-you-prefer-to-attend" title="Permalink to this headline">¶</a></h2>
+<p>34 out of 45 people answered this question</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Morning</p></th>
+<th class="head"><p>Afternoon</p></th>
+<th class="head"><p>Evening</p></th>
+<th class="head"><p>Anytime</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Monday</p></td>
+<td><p>11.1%</p></td>
+<td><p>14.8%</p></td>
+<td><p>77.8%</p></td>
+<td><p>14.8%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tuesday</p></td>
+<td><p>6.2%</p></td>
+<td><p>12.5%</p></td>
+<td><p>84.4%</p></td>
+<td><p>15.6</p></td>
+</tr>
+<tr class="row-even"><td><p>Wednesday</p></td>
+<td><p>6.2%</p></td>
+<td><p>9.4%</p></td>
+<td><p>81.2%</p></td>
+<td><p>15.6%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Thursday</p></td>
+<td><p>8.8%</p></td>
+<td><p>14.7%</p></td>
+<td><p>85.3%</p></td>
+<td><p>14.7%</p></td>
+</tr>
+<tr class="row-even"><td><p>Friday</p></td>
+<td><p>13.3%</p></td>
+<td><p>20%</p></td>
+<td><p>73.3%</p></td>
+<td><p>10%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Saturday</p></td>
+<td><p>12.5%</p></td>
+<td><p>37.5%</p></td>
+<td><p>56.2%</p></td>
+<td><p>50%</p></td>
+</tr>
+<tr class="row-even"><td><p>Sunday</p></td>
+<td><p>14.3%</p></td>
+<td><p>42.9%</p></td>
+<td><p>35.7%</p></td>
+<td><p>50%</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="how-do-you-use-python-in-your-life">
+<h2>How do you use Python in your life?<a class="headerlink" href="#how-do-you-use-python-in-your-life" title="Permalink to this headline">¶</a></h2>
+<p>38 out of 45 people answered this question (with multiple choice)</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Answer</p></th>
+<th class="head"><p>Respondents</p></th>
+<th class="head"><p>Percentage</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Data science</p></td>
+<td><p>24</p></td>
+<td><p>63.2%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Web development (backend)</p></td>
+<td><p>23</p></td>
+<td><p>60.5%</p></td>
+</tr>
+<tr class="row-even"><td><p>DevOps / System Administration</p></td>
+<td><p>15</p></td>
+<td><p>39.5%</p></td>
+</tr>
+<tr class="row-odd"><td><p>QA automation</p></td>
+<td><p>11</p></td>
+<td><p>28.9%</p></td>
+</tr>
+<tr class="row-even"><td><p>Other</p></td>
+<td><p>2</p></td>
+<td><p>5.3%</p></td>
+</tr>
+</tbody>
+</table>
+<p>The additional answers were:</p>
+<ul class="simple">
+<li><p>Stul</p></li>
+<li><p>Industial</p></li>
+</ul>
+</div>
+<div class="section" id="what-skill-level-would-you-like-the-events-be-catered-to">
+<h2>What skill level would you like the events be catered to?<a class="headerlink" href="#what-skill-level-would-you-like-the-events-be-catered-to" title="Permalink to this headline">¶</a></h2>
+<p>43 out of 45 people answered this question</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Answer</p></th>
+<th class="head"><p>Respondents</p></th>
+<th class="head"><p>Percentage</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Mid-level</p></td>
+<td><p>26</p></td>
+<td><p>60.5%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Senior</p></td>
+<td><p>10</p></td>
+<td><p>23.3%</p></td>
+</tr>
+<tr class="row-even"><td><p>Entry level</p></td>
+<td><p>6</p></td>
+<td><p>14%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Staff or above</p></td>
+<td><p>1</p></td>
+<td><p>2.3%</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="are-there-any-topics-in-particular-you-d-like-presented">
+<h2>Are there any topics in particular you’d like presented?<a class="headerlink" href="#are-there-any-topics-in-particular-you-d-like-presented" title="Permalink to this headline">¶</a></h2>
+<p>16 out of 45 people answered this question</p>
+<p>List of requested topics:</p>
+<ul class="simple">
+<li><p>Django</p></li>
+<li><p>Innovative use of Python</p></li>
+<li><p>Database / SQLAlchemy</p></li>
+<li><p>AI/ML/NLP</p></li>
+<li><p>Type system</p></li>
+<li><p>FastAPI</p></li>
+<li><p>PyTorch</p></li>
+<li><p>Coverage of Python features or libraries</p></li>
+<li><p>Applications for data analystics/data science</p></li>
+<li><p>Security</p></li>
+<li><p>cloud and cross-cloud access/admin/etc…</p></li>
+<li><p>Using Python for Windows automation (ex. Win32com)</p></li>
+</ul>
+</div>
+<div class="section" id="would-you-be-interested-in-helping-the-group-with-any-of-the-following">
+<h2>Would you be interested in helping the group with any of the following?<a class="headerlink" href="#would-you-be-interested-in-helping-the-group-with-any-of-the-following" title="Permalink to this headline">¶</a></h2>
+<p>44 out of 45 people answered this question (with multiple choice)</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Answer</p></th>
+<th class="head"><p>Respondents</p></th>
+<th class="head"><p>Percentage</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>No thanks, I’d just like to attend</p></td>
+<td><p>35</p></td>
+<td><p>79.5%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Being a speaker and presenting a topic</p></td>
+<td><p>12</p></td>
+<td><p>27.3%</p></td>
+</tr>
+<tr class="row-even"><td><p>Providing a venue to host events</p></td>
+<td><p>0</p></td>
+<td><p>0%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sponsoring Tampa Bay Python</p></td>
+<td><p>0</p></td>
+<td><p>0%</p></td>
+</tr>
+<tr class="row-even"><td><p>Other</p></td>
+<td><p>1</p></td>
+<td><p>2.3%</p></td>
+</tr>
+</tbody>
+</table>
+<p>The additional answer was:</p>
+<blockquote>
+<div><p>I can help where I am able. I can ask my company to see if they would like to sponsor, etc…</p>
+</div></blockquote>
+</div>
+<div class="section" id="is-there-anything-else-you-d-like-to-share">
+<h2>Is there anything else you’d like to share?<a class="headerlink" href="#is-there-anything-else-you-d-like-to-share" title="Permalink to this headline">¶</a></h2>
+<p>10 out of 45 people answered this question</p>
+<ul class="simple">
+<li><p>Nope, thanks</p></li>
+<li><p>I would like to increase my skills to find a new career</p></li>
+<li><p>Thanks for doing this!</p></li>
+<li><p>Nothing more to share</p></li>
+<li><p>If possible, can the in-person meet ups rotate venues around the bay? I live in St Pete and find it hard to make it to Tampa around rush Hr so I rarely attend those.</p></li>
+<li><p>I miss going to meetups and would love to attend again.</p></li>
+<li><p>Thank you for rebooting the group!</p></li>
+<li><p>I’m new, haven’t attended anything yet, just looking forward to getting (re)engaged!</p></li>
+<li><p>Thanks for doing this!</p></li>
+</ul>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="summarization">
+<h1>Summarization<a class="headerlink" href="#summarization" title="Permalink to this headline">¶</a></h1>
+<p>I’m kicking myself for not asking the question about where you might prefer
+events to be held. Thanks to the person who brought it up in the last question!</p>
+<p>If you have thoughts you want to share about the survey or want to help, join
+our <a class="reference internal" href="../community.html"><span class="doc std std-doc">Slack community</span></a>.</p>
+<p>Some next steps I see are:</p>
+<ul class="simple">
+<li><p>We’re going to aim for at least one in-person event per month.</p></li>
+<li><p>At least twice a month we should try to do some sort of online “office hours”
+Zoom room for people to drop in and discuss anything.</p></li>
+<li><p>There is interest in holding a variety of events, we will try to do at least
+one of each to see how they go.</p></li>
+<li><p>Most people are interested in events (assuming in-person) to be held on
+Tuesday and Thursday evenings. So that’s what we’ll aim for initially and
+rotate them between Tampa and St. Petersburg.</p></li>
+<li><p>About half of the respondents are interested in a weekend activity in the
+afternoon.</p></li>
+<li><p>About half of the respondents would like to get together for happy hour or
+other non-technical social gathering. We’ll look into trying to do this before
+the end of 2021.</p></li>
+</ul>
+<p>Thanks for your time,</p>
+<p>Matthew Granda (Your organizer)</p>
+</div>
+
+<div class="section">
+     
+<div class="section">
+  <span style="float: left">
+     Previous:
+    
+    <a href="2021-10-30-revive-group.html">
+       Request for comment about Meetup group!
+    </a>
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+    
+  </span>
+</div>
+  
+</div>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+            &copy; Copyright 2021 Tampa Bay Python, a 501(c)(3) organization.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NF0M2JMN5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NF0M2JMN5L');
+</script>
+
+
+  </body>
+</html>

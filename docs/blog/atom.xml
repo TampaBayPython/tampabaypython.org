@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://tampabaypython.org/blog</id>
+  <title>Blog</title>
+  <updated>2021-11-07T17:11:27.993432+00:00</updated>
+  <link href="https://tampabaypython.org/blog"/>
+  <link href="https://tampabaypython.org/blog/blog/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.org/" version="0.10.20">ABlog</generator>
+  <entry>
+    <id>https://tampabaypython.org/blog/blog/2021-10-30-revive-group.html</id>
+    <title>Request for comment about Meetup group!</title>
+    <updated>2021-10-30T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Granda</name>
+    </author>
+    <content type="html">&lt;p&gt;I’m Matthew, a Tampa native and long-time user of Python.&lt;/p&gt;
+</content>
+    <link href="https://tampabaypython.org/blog/blog/2021-10-30-revive-group.html" rel="alternate"/>
+    <summary>I’m Matthew, a Tampa native and long-time user of Python.</summary>
+    <published>2021-10-30T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://tampabaypython.org/blog/blog/2021-11-6-survey-results.html</id>
+    <title>Meetup revitalization survey results</title>
+    <updated>2021-11-06T00:00:00+00:00</updated>
+    <author>
+      <name>Matthew Granda</name>
+    </author>
+    <content type="html">&lt;p&gt;Hi members of TBP, it’s been one week since the survey was published for the
+group to share your opinions. Thanks for taking the time. It helped better
+understand what you want to see in the community.&lt;/p&gt;
+</content>
+    <link href="https://tampabaypython.org/blog/blog/2021-11-6-survey-results.html" rel="alternate"/>
+    <summary>Hi members of TBP, it’s been one week since the survey was published for the
+group to share your opinions. Thanks for taking the time. It helped better
+understand what you want to see in the community.</summary>
+    <published>2021-11-06T00:00:00+00:00</published>
+  </entry>
+</feed>
