@@ -5,7 +5,7 @@
 # Meetup revitalization survey results
 
 Hi members of TBP, it's been one week since the survey was published for the
-group to share your opinions. Thanks for taking the time. It helped better
+group to share your opinions. Thanks for taking the time. It helps better
 understand what you want to see in the community.
 
 I wanted to share the results with you and a few action items that I think we
